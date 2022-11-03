@@ -33,7 +33,7 @@ async function bootstrap() {
     return { count }
   })
 
-  fastify.post('/pool', async (request, reply) => {
+  fastify.post('/pools', async (request, reply) => {
     const createPoolBody = z.object({
       title: z.string(),
     })
